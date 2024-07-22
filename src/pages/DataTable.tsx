@@ -36,12 +36,13 @@ const DataTable: React.FC<DataTableProps> = ({ data, columns, rowsPerPage = 10 }
           ))}
         </tbody>
       </Table>
-      <div className={styles.page}>
-        <Pagination
+      <div className={styles.page }>
+        <Pagination 
           total={Math.ceil(data.length / rowsPerPage)}
           value={activePage}
           onChange={setPage}
           siblings={3}
+          
         />
       </div>
     </div>

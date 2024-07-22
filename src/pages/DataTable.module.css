@@ -1,15 +1,18 @@
+/* Styles for the DataTable container */
 .data-table-container {
   margin: 20px;
-  overflow-x: auto; /* Allows horizontal scrolling if the table is too wide */
+  overflow-x: auto;
 }
 
+/* Styles for the table */
 .data-table-container table {
   width: 100%;
   border-collapse: collapse;
   font-family: 'Arial, sans-serif';
 }
 
-.data-table-container th, .data-table-container td {
+.data-table-container th,
+.data-table-container td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
@@ -26,38 +29,38 @@
 
 .data-table-container tr:hover {
   background-color: #2a4aa3;
-  color: #ffffff; /* Ensure text is visible on hover */
+  color: #ffffff;
 }
 
+/* Styles for the pagination component */
 .page {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.mantine-Pagination {
-  display: flex;
-  gap: 4px; /* Space between pagination items */
+
+/* Responsive Styles for DataTable */
+@media (max-width: 1200px) {
+  .data-table-container {
+    margin: 10px;
+  }
+
+
 }
 
-.mantine-Pagination-item {
-  background-color: #60cdff;
-  color: white;
-  border-radius: 4px;
-  padding: 6px 12px; /* Adjust padding for better spacing */
-  cursor: pointer;
-  text-align: center;
-  line-height: 1.5; /* Align text vertically */
-  font-size: 14px; /* Font size for better readability */
+@media (max-width: 768px) {
+  .data-table-container {
+    margin: 5px;
+  }
+
+
 }
 
-.mantine-Pagination-item:hover {
-  background-color: #4a9bce; /* Lighter shade for hover effect */
-}
+@media (max-width: 480px) {
+  .data-table-container {
+    margin: 0;
+  }
 
-.mantine-Pagination-itemActive {
-  background-color: #40c3ff;
-  color: white;
-  border-radius: 4px;
-  font-weight: bold; /* Make active item stand out */
+
 }
