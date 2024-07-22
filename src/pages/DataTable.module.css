@@ -1,0 +1,63 @@
+.data-table-container {
+  margin: 20px;
+  overflow-x: auto; /* Allows horizontal scrolling if the table is too wide */
+}
+
+.data-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial, sans-serif';
+}
+
+.data-table-container th, .data-table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table-container th {
+  background-color: #60cdff;
+  color: #ffffff;
+}
+
+.data-table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.data-table-container tr:hover {
+  background-color: #2a4aa3;
+  color: #ffffff; /* Ensure text is visible on hover */
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mantine-Pagination {
+  display: flex;
+  gap: 4px; /* Space between pagination items */
+}
+
+.mantine-Pagination-item {
+  background-color: #60cdff;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 12px; /* Adjust padding for better spacing */
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5; /* Align text vertically */
+  font-size: 14px; /* Font size for better readability */
+}
+
+.mantine-Pagination-item:hover {
+  background-color: #4a9bce; /* Lighter shade for hover effect */
+}
+
+.mantine-Pagination-itemActive {
+  background-color: #40c3ff;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold; /* Make active item stand out */
+}
