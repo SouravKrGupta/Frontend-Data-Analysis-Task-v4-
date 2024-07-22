@@ -93,8 +93,8 @@ Here's a brief example of how the data might be displayed:
 
 | Crop      | Avg Yield | Avg Cultivation Area |
 |-----------|-----------|-----------------------|
-| Corn      | 5.2 tons/acre | 2000 acres           |
-| Soybean   | 3.8 tons/acre | 1500 acres           |
+| Corn      | 5.278 tons/acre | 2.856 acres           |
+| Soybean   | 3.875 tons/acre | 15.256 acres           |
 
 ## Contributing
 
